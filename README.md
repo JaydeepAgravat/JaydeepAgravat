@@ -1,3 +1,3 @@
-  -  👋 Hi, I’m Jaydeep Agravat
+  -  👋 Hi, I’m Jaydeep Agravat.
   -  👀 I’m interested in Data Science.
   -  🌱 I’m currently learning pandas, cassandra and DSA.
