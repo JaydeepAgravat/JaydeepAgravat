@@ -1,21 +1,23 @@
-👋 Welcome to my GitHub! I'm Jaydeep Agravat, diving into the data science and machine learning world. Here's a glimpse of what I work with:
+# Hello, I'm Jaydeep Agravat 👋
 
-🔍 Data Viz: Matplotlib, Seaborn, Plotly
+I'm a final year computer engineering student with a passion for data science. Welcome to my GitHub profile!
 
-📊 Data Analysis: NumPy, Pandas, SciPy
+## About Me
 
-🤖 ML: Scikit-Learn (sklearn)
+- 🌱 Currently, I'm learning and working on various data science and machine learning projects.
+- 🎓 I'm about to complete my Bachelor's in Computer Engineering.
+- 💼 I'm open to internships and job opportunities in the field of data science and machine learning.
+- 🚀 Currently, I'm learning system design for machine learning.
 
-🧪 Version Control: Git & GitHub
+## 🔧 Skills
 
-🌐 Web Dev: Flask, FastAPI, HTML, CSS, JavaScript, Python
+- I used Python to handle data and create clear visuals with NumPy, Pandas, and Matplotlib.
+- I also utilized Scikit-Learn for Machine Learning and Tableau for business insights.
+- I excelled in version control with Git and GitHub, developed web applications using Flask, FastAPI, HTML, CSS, JavaScript, and Python, efficiently managed databases with MySQL and SQL, and effortlessly deployed web apps via Streamlit.
+- I excelled in problem-solving, merging technology and expertise.
+ 
+## 📫 How to Reach Me
 
-🗃️ DB Management: MySQL, SQL
+- Email: [Your Email Address](mailto:jaydeepagravat94583.com)
 
-📈 BI & Reporting: Tableau
-
-🧠 DSA: Python & Algorithms
-
-🚀 App Deployment: Streamlit
-
-Let's explore the data world together! 📈🤖🌐📊
+Feel free to connect with me or reach out if you'd like to collaborate on a project or discuss anything related to data science and computer engineering.
