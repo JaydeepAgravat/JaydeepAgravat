@@ -1,28 +1,60 @@
-# Hi, I'm [Jaydeep Agravat]! 👋
+# Hi, I'm Jaydeep Agravat 👋
 
-Welcome to my GitHub profile, where I explore the exciting world of data science and machine learning.
+Welcome to my GitHub profile, where I explore the exciting world of data science and machine learning. 📈🤖
 
-## 🛠️ Tools and Technologies
-I've delved into a variety of tools and technologies that are essential for data science and machine learning, including:
+Here's a brief overview of the tools and technologies I work with:
 
-- **Python**: My primary programming language for data analysis and machine learning.
-- **Jupyter Notebooks**: Where I document my data analyses, build models, and create interactive visualizations.
-- **Pandas**: For data manipulation and analysis.
-- **NumPy**: Used for numerical computations.
-- **Matplotlib** and **Seaborn**: My go-to libraries for data visualization.
-- **Scikit-Learn**: For machine learning models and predictive analytics.
-- **SQL**: For querying and working with relational databases.
-- **Git & GitHub**: Essential for version control and collaboration.
+## 🔍 Data Visualization
 
-## 🔍 Topics I've Explored
-In my journey, I've delved into various data science and machine learning topics, including:
+I love creating stunning visualizations to tell data stories. My preferred tools include:
+- Matplotlib
+- Seaborn
+- Plotly
 
-- **Data Preprocessing**: Techniques for cleaning and preparing data for analysis.
-- **Exploratory Data Analysis (EDA)**: Uncovering insights from data through visualizations and statistics.
-- **Regression and Classification**: Building predictive models using various algorithms.
-- **Model Evaluation**: Understanding how to assess model performance.
-- **Feature Selection**: Selecting relevant features for modeling.
-- **Regularization**: Techniques like Ridge and Lasso regression.
+## 📊 Data Analysis
 
-## 🌱 What's Next?
-I'm continuously learning and exploring new aspects of data science and machine learning. 
+For data crunching and analysis, I rely on:
+- NumPy
+- Pandas
+- SciPy
+
+## 🤖 Machine Learning
+
+I'm into machine learning, and my go-to library is:
+- Scikit-Learn (sklearn)
+
+I'm also familiar with other frameworks like TensorFlow, Keras, and PyTorch.
+
+## 🧪 Version Control
+
+I keep my projects organized and collaborative using:
+- Git & GitHub
+
+## 🌐 Web Development
+
+Building web applications is another area of interest. I work with:
+- Web Frameworks: Flask, FastAPI
+- Frontend: HTML, CSS, JavaScript
+- Backend: Python (Flask/FastAPI), Databases (e.g., MySQL)
+
+## 🗃️ Database Management
+
+Data is at the core of my work, and I handle databases with:
+- Database: MySQL
+- SQL for Database Querying
+
+## 📈 Business Intelligence and Reporting
+
+I create interactive dashboards and reports with:
+- Tableau
+
+## 🧠 Data Structure and Algorithms
+
+I enjoy solving problems with:
+- Data Structures and Algorithms (DSA)
+- Python for implementing algorithms
+
+## 🚀 Web Application Deployment
+
+To share my data-driven web apps, I deploy on Streamlit.
+
