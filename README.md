@@ -8,9 +8,9 @@ I'm a React Native engineer from Gujarat, India. I worked on 22 client apps at a
 
 ---
 
-<a href="https://github.com/JaydeepAgravat/zahln"><img src="https://raw.githubusercontent.com/JaydeepAgravat/zahln/main/docs/screenshots/payment-story.png" alt="A café payment in six steps, from a one-time QR code to a green till" width="100%"></a>
+<a href="https://github.com/JaydeepAgravat/zaster"><img src="https://raw.githubusercontent.com/JaydeepAgravat/zaster/main/docs/screenshots/payment-story.png" alt="A café payment in six steps, from a one-time QR code to a green till" width="100%"></a>
 
-**[Zahln](https://github.com/JaydeepAgravat/zahln)**: pay at a café counter phone to phone, from one bank account to another over SEPA Instant. There is no card and no fee. It has a wallet app and a till app (React Native), a web dashboard, and a Fastify + Postgres ledger. If the network drops mid-payment, the app shows *Checking* instead of guessing, so nobody is ever charged twice.
+**[Zaster](https://github.com/JaydeepAgravat/zaster)**: pay at a café counter phone to phone, from one bank account to another over SEPA Instant. There is no card and no fee. It has a wallet app and a till app (React Native), a web dashboard, and a Fastify + Postgres ledger. If the network drops mid-payment, the app shows *Checking* instead of guessing, so nobody is ever charged twice.
 
 **[Invoice Maker](https://github.com/JaydeepAgravat/invoice-maker)**: offline invoices for tradespeople, built after reading ~110 critical app reviews. No account, no subscription: pay once. It has 384 tests and uses Kotlin Turbo Modules.
 
