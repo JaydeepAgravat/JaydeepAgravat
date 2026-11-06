@@ -4,6 +4,12 @@ I'm a React Native engineer from Gujarat, India. I worked on 22 client apps at a
 
 **💶 Right now:** I'm learning German fintech by building in it: SEPA Instant, PSD2 and SCA, BaFin licensing, GoBD and KassenSichV, and how apps like N26 and Trade Republic are built.
 
+**🧩 Open source:** fixes in React Native libraries.
+- **Merged:** [uniwind #764](https://github.com/uni-stack/uniwind/pull/764) caches styles for classes with `data-*` variants: **12.8 → 8.6 ms per render, 400 → 0 re-parses**.
+- **Fixed after my repro:** [react-native-true-sheet #1004](https://github.com/lodev09/react-native-true-sheet/issues/1004), a Jest mock that dropped the `background` prop.
+- **In review:** [react-native-keyboard-controller #1748](https://github.com/kirillzyusko/react-native-keyboard-controller/pull/1748), CI runs that cancelled each other.
+- **Building:** [react-native-enriched-html #855](https://github.com/software-mansion/react-native-enriched-html/issues/855), mentions that can't be half-edited, on iOS, Android and web.
+
 [Portfolio](https://jaydeep-agravat-portfolio.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/jaydeep-agravat-0951aa334/) · [Email](mailto:jaydeepagravat94583@gmail.com) · Open to remote work or relocation
 
 ---
