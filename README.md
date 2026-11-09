@@ -6,9 +6,10 @@ I'm a React Native engineer from Gujarat, India. I worked on 22 client apps at a
 
 **🧩 Open source:** fixes in React Native libraries.
 - **Merged:** [uniwind #764](https://github.com/uni-stack/uniwind/pull/764) caches styles for classes with `data-*` variants: **12.8 → 8.6 ms per render, 400 → 0 re-parses**.
+- **Merged:** [react-native-keyboard-controller #1748](https://github.com/kirillzyusko/react-native-keyboard-controller/pull/1748) cancels outdated CI runs on pull requests, which were wasting **about 295 runner-minutes** across 300 PR runs.
 - **Fixed after my repro:** [react-native-true-sheet #1004](https://github.com/lodev09/react-native-true-sheet/issues/1004), a Jest mock that dropped the `background` prop.
-- **In review:** [react-native-keyboard-controller #1748](https://github.com/kirillzyusko/react-native-keyboard-controller/pull/1748), CI runs that cancelled each other.
-- **Building:** [react-native-enriched-html #855](https://github.com/software-mansion/react-native-enriched-html/issues/855), mentions that can't be half-edited, on iOS, Android and web.
+- **In review:** [react-native-enriched-html #858](https://github.com/software-mansion/react-native-enriched-html/pull/858), a `removeInvalidMentionContent` prop so mentions can't be half-edited, on iOS, Android and web.
+- **Next:** approved fixes in react-native-screens, react-native-firebase and react-native-audio-api.
 
 [Portfolio](https://jaydeep-agravat-portfolio.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/jaydeep-agravat-0951aa334/) · [Email](mailto:jaydeepagravat94583@gmail.com) · Open to remote work or relocation
 
