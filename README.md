@@ -1,50 +1,17 @@
-<h1 align="center">Hi, I'm Jaydeep <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="34" alt="Waving hand"></h1>
+<h1 align="center">🦸 Open source log</h1>
 
 <p align="center">
-  <a href="https://jaydeep-agravat-portfolio.vercel.app/">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=61DAFB&center=true&vCenter=true&width=640&lines=React+Native+engineer+%C2%B7+New+Architecture;I+own+every+release+of+a+50K%2B+app;I+fix+bugs+in+the+libraries+you+use;Learning+German+fintech+by+building+it" alt="React Native engineer. I own every release of a 50K+ app. I fix bugs in the libraries you use. Learning German fintech by building it.">
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=61DAFB&center=true&vCenter=true&width=640&lines=Fixes+in+React+Native+libraries;Reproduce+it.+Measure+it.+Fix+it.;Keep+the+fix+as+small+as+the+maintainer+wants" alt="Fixes in React Native libraries. Reproduce it. Measure it. Fix it. Keep the fix as small as the maintainer wants.">
 </p>
 
 <p align="center">
-  <a href="https://jaydeep-agravat-portfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-0b0f19?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
-  <a href="https://www.linkedin.com/in/jaydeep-agravat-0951aa334/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:jaydeepagravat94583@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <img src="https://img.shields.io/badge/Open_to-remote_or_relocation-1a9d55?style=for-the-badge" alt="Open to remote work or relocation">
+  <img src="https://img.shields.io/badge/merged-2-1a9d55?style=for-the-badge" alt="2 merged">
+  <img src="https://img.shields.io/badge/fixed_after_my_repro-1-0b8fc9?style=for-the-badge" alt="1 fixed after my repro">
+  <img src="https://img.shields.io/badge/in_review-3-d48806?style=for-the-badge" alt="3 in review">
+  <img src="https://img.shields.io/badge/draft-1-7c6fd6?style=for-the-badge" alt="1 draft">
 </p>
 
 ---
-
-<table>
-<tr>
-<td width="62%" valign="top">
-
-### 📱 I build mobile apps people depend on
-
-I'm a React Native engineer from Gujarat, India. I worked on **22 client apps** at an agency, and 15 of them are live.
-
-Today I'm the **only mobile engineer** on a quick-commerce app with **50K+ downloads**. I rebuilt it from scratch and I own every release, on Android and iOS.
-
-**💶 Right now:** learning German fintech by building in it: SEPA Instant, PSD2 and SCA, BaFin licensing, GoBD and KassenSichV, and how apps like N26 and Trade Republic are built.
-
-</td>
-<td width="38%" align="center">
-<img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="100%" alt="A developer coding at two monitors">
-</td>
-</tr>
-</table>
-
-### 📊 The receipts
-
-| 🚀 Releases | 🛡️ Crash-free | ⚡ JS blocking time | 💸 Google Maps bill |
-| :---: | :---: | :---: | :---: |
-| **11** in four months | **99.87 %** of users | **7.7 s → 0.3 s** | **₹80K → ₹25K** a month |
-
----
-
-### 🧩 Open source
-
-Fixes in React Native libraries. I read the issue, reproduce it, measure it, and keep the fix as small as the maintainer wants it.
 
 | | Project | What I did |
 | :---: | --- | --- |
@@ -58,18 +25,43 @@ Fixes in React Native libraries. I read the issue, reproduce it, measure it, and
 
 <sub>✅ merged · 🐛 fixed after my repro · 👀 in review · 📝 draft</sub>
 
+---
+
+### 🎬 The highlights, in movie scenes
+
 <table>
 <tr>
 <td align="center" width="50%">
-<img src="https://media.giphy.com/media/QMHoU66sBXqqLqYvGO/giphy.gif" width="260" alt="This is fine dog in a burning room"><br>
-<sub>Me with four PRs waiting for a maintainer to approve CI</sub>
+<img src="https://media.giphy.com/media/ICoxhc8wGbJ8k/giphy.gif" width="300" alt="The Flash running at super speed"><br>
+<b>uniwind #764</b><br>
+<sub>Components after the style cache: <b>12.8 → 8.6 ms</b> per render</sub>
 </td>
 <td align="center" width="50%">
-<img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="260" alt="Man doing mental math with equations floating around him"><br>
-<sub>Me counting re-renders per product card (86 → 0)</sub>
+<img src="https://media.giphy.com/media/yRd32T3jY8lXmL2JWc/giphy.gif" width="300" alt="Iron Man about to snap, Thanos watching"><br>
+<b>keyboard-controller #1748</b><br>
+<sub>A new commit lands on the PR. Every outdated CI run:</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<img src="https://media.giphy.com/media/kbtXXtZ7TBpnXH9lTF/giphy.gif" width="300" alt="Batman saying: I'll look into it."><br>
+<b>true-sheet #1004</b><br>
+<sub>An issue says the Jest mock is broken. Me, before writing a two-test repro:</sub>
+</td>
+<td align="center" width="50%">
+<img src="https://media.giphy.com/media/xT1Ra2XnbLVCNYOCCA/giphy.gif" width="300" alt="Spider-Man hanging upside down"><br>
+<b>react-native-screens #5306</b><br>
+<sub>Me testing a header bug with the emulator rotated 180°</sub>
 </td>
 </tr>
 </table>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/4Cpgf1zzMMy4w/giphy.gif" width="260" alt="Goku charging a Spirit Bomb"><br>
+  <sub>Me with four PRs, waiting for maintainers to lend their energy (and approve CI)</sub>
+</p>
+
+---
 
 | | 🍿 How I pick a fix |
 | :---: | --- |
@@ -79,30 +71,3 @@ Fixes in React Native libraries. I read the issue, reproduce it, measure it, and
 | 😎 | **12.8 → 8.6 ms per render**, measured |
 | 🙅 | A 600-line PR nobody asked for |
 | 😎 | The smallest fix the maintainer agreed to |
-
----
-
-### 🛠️ Things I built
-
-<a href="https://github.com/JaydeepAgravat/zaster"><img src="https://raw.githubusercontent.com/JaydeepAgravat/zaster/main/docs/screenshots/payment-story.png" alt="A café payment in six steps, from a one-time QR code to a green till" width="100%"></a>
-
-- 💶 **[Zaster](https://github.com/JaydeepAgravat/zaster)**: pay at a café counter phone to phone, from one bank account to another over SEPA Instant. There is no card and no fee. It has a wallet app and a till app (React Native), a web dashboard, and a Fastify + Postgres ledger. If the network drops mid-payment, the app shows *Checking* instead of guessing, so nobody is ever charged twice.
-- 🧾 **[Invoice Maker](https://github.com/JaydeepAgravat/invoice-maker)**: offline invoices for tradespeople, built after reading ~110 critical app reviews. No account, no subscription: pay once. It has 384 tests and uses Kotlin Turbo Modules.
-- 🎼 **[Score Reader](https://github.com/JaydeepAgravat/sheet-music-reader)**: a sheet-music reader for Android tablets. A foot-pedal page turn takes **20 ms**, because Kotlin flips the page without waiting for JavaScript.
-- 🔍 **[App Teardown Handbook](https://github.com/JaydeepAgravat/app-teardown)**: how to work out the design of any mobile app without its code. I tested it on Bluesky, Expensify and Joplin: 53 conclusions were confirmed by their source code, and the 12 it got wrong are published too.
-
----
-
-### 🧰 Stack
-
-<p>
-  <img src="https://skillicons.dev/icons?i=react,ts,kotlin,nodejs,postgres,githubactions,androidstudio&perline=7" alt="React, TypeScript, Kotlin, Node.js, Postgres, GitHub Actions, Android Studio">
-</p>
-
-<sub>React Native (New Architecture) · TypeScript · Kotlin · TanStack Query · Zustand · Fastify · Postgres · GitHub Actions · Fastlane</sub>
-
-<p align="center">
-  <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="180" alt="Cat typing fast on a laptop"><br>
-  <sub>Me on release day</sub><br><br>
-  <img src="https://komarev.com/ghpvc/?username=JaydeepAgravat&color=61dafb&style=flat-square&label=profile+views" alt="Profile views">
-</p>
