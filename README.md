@@ -9,7 +9,9 @@ I'm a React Native engineer from Gujarat, India. I worked on 22 client apps at a
 - **Merged:** [react-native-keyboard-controller #1748](https://github.com/kirillzyusko/react-native-keyboard-controller/pull/1748) cancels outdated CI runs on pull requests, which were wasting **about 295 runner-minutes** across 300 PR runs.
 - **Fixed after my repro:** [react-native-true-sheet #1004](https://github.com/lodev09/react-native-true-sheet/issues/1004), a Jest mock that dropped the `background` prop.
 - **In review:** [react-native-enriched-html #858](https://github.com/software-mansion/react-native-enriched-html/pull/858), a `removeInvalidMentionContent` prop so mentions can't be half-edited, on iOS, Android and web.
-- **Next:** approved fixes in react-native-screens, react-native-firebase and react-native-audio-api.
+- **In review:** [react-native-screens #5306](https://github.com/software-mansion/react-native-screens/pull/5306) stops the Android stack header from growing by a display cutout at the bottom of the screen (**96 px** on the test device).
+- **In review:** [Re.Pack #1532](https://github.com/callstack/repack/pull/1532) makes source maps respect `output.devtoolModuleFilenameTemplate`, so you can choose the paths in `sources`.
+- **Draft:** [react-native-audio-api #1488](https://github.com/software-mansion/react-native-audio-api/pull/1488) lets Android apps see when a recording is interrupted, even without audio focus.
 
 [Portfolio](https://jaydeep-agravat-portfolio.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/jaydeep-agravat-0951aa334/) · [Email](mailto:jaydeepagravat94583@gmail.com) · Open to remote work or relocation
 
