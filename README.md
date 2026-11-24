@@ -1,73 +1,103 @@
-<h1 align="center">🦸 Open source log</h1>
+<h1 align="center">Jaydeep Agravat</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=61DAFB&center=true&vCenter=true&width=640&lines=Fixes+in+React+Native+libraries;Reproduce+it.+Measure+it.+Fix+it.;Keep+the+fix+as+small+as+the+maintainer+wants" alt="Fixes in React Native libraries. Reproduce it. Measure it. Fix it. Keep the fix as small as the maintainer wants.">
+  <b>React Native engineer.</b> I fix the open-source libraries React Native apps are built on,<br>
+  and every fix comes with a reproduction and the numbers to prove it.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/merged-2-1a9d55?style=for-the-badge" alt="2 merged">
-  <img src="https://img.shields.io/badge/fixed_after_my_repro-1-0b8fc9?style=for-the-badge" alt="1 fixed after my repro">
-  <img src="https://img.shields.io/badge/in_review-3-d48806?style=for-the-badge" alt="3 in review">
-  <img src="https://img.shields.io/badge/draft-1-7c6fd6?style=for-the-badge" alt="1 draft">
+  <code>3 merged</code> · <code>1 fixed after my repro</code> · <code>3 in review</code> · <code>1 draft</code>
+</p>
+
+<p align="center">
+  <a href="https://jaydeep-agravat-portfolio.vercel.app/"><b>Portfolio</b></a> ·
+  <a href="#merged">Merged work</a> ·
+  <a href="#in-review">In review</a> ·
+  <a href="#how-i-work">How I work</a>
 </p>
 
 ---
 
-| | Project | What I did |
-| :---: | --- | --- |
-| ✅ | [**uniwind #764**](https://github.com/uni-stack/uniwind/pull/764) | Cached styles for classes with `data-*` variants: **12.8 → 8.6 ms per render, 400 → 0 re-parses**. |
-| ✅ | [**react-native-keyboard-controller #1748**](https://github.com/kirillzyusko/react-native-keyboard-controller/pull/1748) | Cancels outdated CI runs on pull requests, which were wasting **~295 runner-minutes** across 300 PR runs. |
-| 🐛 | [**react-native-true-sheet #1004**](https://github.com/lodev09/react-native-true-sheet/issues/1004) | A two-test repro for a Jest mock that dropped the `background` prop. Fixed the same day. |
-| 👀 | [**react-native-enriched-html #858**](https://github.com/software-mansion/react-native-enriched-html/pull/858) | A `removeInvalidMentionContent` prop so mentions can't be half-edited, on iOS, Android and web. |
-| 👀 | [**react-native-screens #5306**](https://github.com/software-mansion/react-native-screens/pull/5306) | Stops the Android stack header from growing by a display cutout at the bottom of the screen (**96 px** on the test device). |
-| 👀 | [**Re.Pack #1532**](https://github.com/callstack/repack/pull/1532) | Source maps respect `output.devtoolModuleFilenameTemplate`, so you choose the paths in `sources`. |
-| 📝 | [**react-native-audio-api #1488**](https://github.com/software-mansion/react-native-audio-api/pull/1488) | Draft: lets Android apps see when a recording is interrupted, even without audio focus. |
+### The ledger
 
-<sub>✅ merged · 🐛 fixed after my repro · 👀 in review · 📝 draft</sub>
+Before and after, measured on the same device and setup, in libraries other teams maintain:
+
+```diff
+- uniwind              12.8 ms per render, 400 style re-parses
++                       8.6 ms per render,   0 style re-parses
+
+- rnmapbox/maps        60 image requests on first load, 32 to add one image
++                      30 image requests on first load,  1 to add one image
+
+- rnmapbox/maps        ~24 s for map icons to come back after panning away
++                      icons drawn at once, nothing downloaded again
+
+- keyboard-controller  ~295 runner-minutes on outdated CI runs (last 300 PR runs)
++                      outdated runs cancelled on every new push
+
+- react-native-screens Android header 96 px too tall over a bottom display cutout
++                      header ignores the bottom cutout by default
+```
+
+<sub>The rnmapbox numbers are the maintainer's own, measured during review.</sub>
 
 ---
 
-### 🎬 The highlights, in movie scenes
+<h3 id="merged">Merged</h3>
+
+#### <img src="https://avatars.githubusercontent.com/u/49320253?v=4&s=40" width="20" height="20" alt=""> rnmapbox/maps · [#4450](https://github.com/rnmapbox/maps/pull/4450) · merged one day after I opened it
+
+On iOS, `<Images>` downloaded every image again whenever the list changed, and map icons went blank after panning away and back. Now only new or changed images are downloaded, and each one gets a placeholder first, as on Android. Fixes [#4436](https://github.com/rnmapbox/maps/issues/4436).
+
+| Measured by the maintainer | Before | After |
+| --- | ---: | ---: |
+| First load, 30 images | 60 requests | **30** |
+| Add one image | 32 requests | **1** |
+| Pan far away and back | 31 missing images, ~24 s to refill | **0, instant** |
+
+> *"Thanks, this looks good."* · [mfazekas](https://github.com/mfazekas), maintainer, approving with the numbers above
+
+#### <img src="https://avatars.githubusercontent.com/u/223273232?v=4&s=40" width="20" height="20" alt=""> uniwind · [#764](https://github.com/uni-stack/uniwind/pull/764) · **12.8 → 8.6 ms per render**
+
+One `data-[…]` variant made uniwind re-parse a component's styles on every render. I cached the result by the data props each rule actually reads. Review caught a slower first resolve, so I fixed that with benchmarks against `main`, then rewrote it to the simpler design the maintainer preferred. Measured on the issue's repro app (400 squares re-rendered 30 times): **400 → 0 re-parses**.
+
+#### <img src="https://avatars.githubusercontent.com/u/22820318?v=4&s=40" width="20" height="20" alt=""> react-native-keyboard-controller · [#1748](https://github.com/kirillzyusko/react-native-keyboard-controller/pull/1748) · **~295 runner-minutes**
+
+In the last 300 PR runs, about 40 kept going after a newer push: about 295 runner-minutes, 145 of them on macOS. Each workflow now has its own concurrency group per pull request, so a new push cancels only the outdated run.
+
+> *"Thank you for your contribution!"* · [kirillzyusko](https://github.com/kirillzyusko), maintainer
+
+#### <img src="https://avatars.githubusercontent.com/u/6686328?v=4&s=40" width="20" height="20" alt=""> react-native-true-sheet · [issue #1004](https://github.com/lodev09/react-native-true-sheet/issues/1004) · fixed the same day
+
+The `ReanimatedTrueSheet` Jest mock dropped the `background` prop. Instead of a description, I sent a [repro repo](https://github.com/JaydeepAgravat/true-sheet-repro-1004) on the published 4.0.1: one command, two tests, one passing and one failing. The maintainer shipped the fix within hours.
+
+---
+
+<h3 id="in-review">In review</h3>
+
+| Pull request | What it does |
+| --- | --- |
+| <img src="https://avatars.githubusercontent.com/u/56880679?v=4&s=40" width="20" height="20" alt="">&nbsp;[react-native-enriched-html #858](https://github.com/software-mansion/react-native-enriched-html/pull/858) | A `removeInvalidMentionContent` prop so an edit inside a mention removes the whole mention, on iOS, Android and web. The team accepted the proposal; I'm working through their first review. |
+| <img src="https://avatars.githubusercontent.com/u/56880679?v=4&s=40" width="20" height="20" alt="">&nbsp;[react-native-screens #5306](https://github.com/software-mansion/react-native-screens/pull/5306) | The Android stack header stops growing by a display cutout at the bottom of the screen (**96 px** on the test device), as agreed in the issue. |
+| <img src="https://avatars.githubusercontent.com/u/42239399?v=4&s=40" width="20" height="20" alt="">&nbsp;[Re.Pack #1532](https://github.com/callstack/repack/pull/1532) | Source maps respect `output.devtoolModuleFilenameTemplate`, so you choose the paths in `sources`. |
+| <img src="https://avatars.githubusercontent.com/u/56880679?v=4&s=40" width="20" height="20" alt="">&nbsp;[react-native-audio-api #1488](https://github.com/software-mansion/react-native-audio-api/pull/1488) <sub>draft</sub> | Lets Android apps observe recording interruptions even without audio focus. |
+
+---
+
+<h3 id="how-i-work">How I work</h3>
 
 <table>
 <tr>
-<td align="center" width="50%">
-<img src="https://media.giphy.com/media/ICoxhc8wGbJ8k/giphy.gif" width="300" alt="The Flash running at super speed"><br>
-<b>uniwind #764</b><br>
-<sub>Components after the style cache: <b>12.8 → 8.6 ms</b> per render</sub>
-</td>
-<td align="center" width="50%">
-<img src="https://media.giphy.com/media/yRd32T3jY8lXmL2JWc/giphy.gif" width="300" alt="Iron Man about to snap, Thanos watching"><br>
-<b>keyboard-controller #1748</b><br>
-<sub>A new commit lands on the PR. Every outdated CI run:</sub>
-</td>
-</tr>
-<tr>
-<td align="center" width="50%">
-<img src="https://media.giphy.com/media/kbtXXtZ7TBpnXH9lTF/giphy.gif" width="300" alt="Batman saying: I'll look into it."><br>
-<b>true-sheet #1004</b><br>
-<sub>An issue says the Jest mock is broken. Me, before writing a two-test repro:</sub>
-</td>
-<td align="center" width="50%">
-<img src="https://media.giphy.com/media/xT1Ra2XnbLVCNYOCCA/giphy.gif" width="300" alt="Spider-Man hanging upside down"><br>
-<b>react-native-screens #5306</b><br>
-<sub>Me testing a header bug with the emulator rotated 180°</sub>
-</td>
+<td width="25%" valign="top"><b>01 · Reproduce</b><br><sub>A repro repo, a failing test or a rotated emulator before any fix. If I can't show the bug, I don't touch the code.</sub></td>
+<td width="25%" valign="top"><b>02 · Measure</b><br><sub>Same device, same build, alternating runs against <code>main</code>. "Should be faster" is not a result.</sub></td>
+<td width="25%" valign="top"><b>03 · Keep it small</b><br><sub>Agree on the scope in the issue first. The fix the maintainer wants, not the one I'd enjoy writing.</sub></td>
+<td width="25%" valign="top"><b>04 · Make review easy</b><br><sub>A clear description, recordings, and the steps to re-run my numbers. Review comments answered with commits.</sub></td>
 </tr>
 </table>
 
-<p align="center">
-  <img src="https://media.giphy.com/media/4Cpgf1zzMMy4w/giphy.gif" width="260" alt="Goku charging a Spirit Bomb"><br>
-  <sub>Me with four PRs, waiting for maintainers to lend their energy (and approve CI)</sub>
-</p>
-
 ---
 
-| | 🍿 How I pick a fix |
-| :---: | --- |
-| 🙅 | Guessing the fix from the issue title |
-| 😎 | Reproducing it first, even on an emulator rotated 180° |
-| 🙅 | "Should be faster now" |
-| 😎 | **12.8 → 8.6 ms per render**, measured |
-| 🙅 | A 600-line PR nobody asked for |
-| 😎 | The smallest fix the maintainer agreed to |
+<p align="center">
+  <b>Hiring a React Native engineer who reads the library source instead of working around it?</b><br>
+  <a href="https://jaydeep-agravat-portfolio.vercel.app/">See my apps and work on the portfolio →</a>
+</p>
