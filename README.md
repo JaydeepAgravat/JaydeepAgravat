@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <code>3 merged</code> · <code>1 fixed after my repro</code> · <code>3 in review</code> · <code>1 draft</code>
+  <code>3 merged</code> · <code>1 fixed after my repro</code> · <code>4 in review</code>
 </p>
 
 <p align="center">
@@ -20,24 +20,12 @@
 
 ### The ledger
 
-Before and after, measured on the same device and setup, in libraries other teams maintain:
+Before and after, measured on the same device and setup, in libraries other teams maintain.
 
-```diff
-- uniwind              12.8 ms per render, 400 style re-parses
-+                       8.6 ms per render,   0 style re-parses
-
-- rnmapbox/maps        60 image requests on first load, 32 to add one image
-+                      30 image requests on first load,  1 to add one image
-
-- rnmapbox/maps        ~24 s for map icons to come back after panning away
-+                      icons drawn at once, nothing downloaded again
-
-- keyboard-controller  ~295 runner-minutes on outdated CI runs (last 300 PR runs)
-+                      outdated runs cancelled on every new push
-
-- react-native-screens Android header 96 px too tall over a bottom display cutout
-+                      header ignores the bottom cutout by default
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/ledger-dark.svg">
+  <img src="assets/ledger-light.svg" width="100%" alt="Before and after my fixes. uniwind: time per render 12.8 ms to 8.6 ms (−33%), style re-parses 400 to 0. rnmapbox/maps: image requests on first load 60 to 30 (−50%), requests to add one image 32 to 1 (−97%), icons after panning away about 24 s to instant. keyboard-controller: about 295 CI minutes on outdated runs saved. react-native-screens (in review): extra header height over a bottom cutout 96 px to 0 px.">
+</picture>
 
 <sub>The rnmapbox numbers are the maintainer's own, measured during review.</sub>
 
@@ -77,10 +65,10 @@ The `ReanimatedTrueSheet` Jest mock dropped the `background` prop. Instead of a 
 
 | Pull request | What it does |
 | --- | --- |
-| <img src="https://avatars.githubusercontent.com/u/56880679?v=4&s=40" width="20" height="20" alt="">&nbsp;[react-native-enriched-html #858](https://github.com/software-mansion/react-native-enriched-html/pull/858) | A `removeInvalidMentionContent` prop so an edit inside a mention removes the whole mention, on iOS, Android and web. The team accepted the proposal; I'm working through their first review. |
+| <img src="https://avatars.githubusercontent.com/u/56880679?v=4&s=40" width="20" height="20" alt="">&nbsp;[react-native-enriched-html #858](https://github.com/software-mansion/react-native-enriched-html/pull/858) | A `removeInvalidMentionContent` prop so an edit inside a mention removes the whole mention, on iOS, Android and web. The team accepted the proposal; their review is addressed, with a final Android pass to go. |
 | <img src="https://avatars.githubusercontent.com/u/56880679?v=4&s=40" width="20" height="20" alt="">&nbsp;[react-native-screens #5306](https://github.com/software-mansion/react-native-screens/pull/5306) | The Android stack header stops growing by a display cutout at the bottom of the screen (**96 px** on the test device), as agreed in the issue. |
 | <img src="https://avatars.githubusercontent.com/u/42239399?v=4&s=40" width="20" height="20" alt="">&nbsp;[Re.Pack #1532](https://github.com/callstack/repack/pull/1532) | Source maps respect `output.devtoolModuleFilenameTemplate`, so you choose the paths in `sources`. |
-| <img src="https://avatars.githubusercontent.com/u/56880679?v=4&s=40" width="20" height="20" alt="">&nbsp;[react-native-audio-api #1488](https://github.com/software-mansion/react-native-audio-api/pull/1488) <sub>draft</sub> | Lets Android apps observe recording interruptions even without audio focus. |
+| <img src="https://avatars.githubusercontent.com/u/56880679?v=4&s=40" width="20" height="20" alt="">&nbsp;[react-native-audio-api #1488](https://github.com/software-mansion/react-native-audio-api/pull/1488) | Lets Android apps observe recording interruptions even without audio focus, with the API the maintainer chose. |
 
 ---
 
