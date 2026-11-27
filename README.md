@@ -1,7 +1,7 @@
 <h1 align="center">Jaydeep Agravat</h1>
 
 <p align="center">
-  <b>React Native engineer.</b> I fix the open-source libraries React Native apps are built on,<br>
+  <b>React Native dev.</b> I fix the open-source libraries React Native apps are built on,<br>
   and every fix comes with a reproduction and the numbers to prove it.
 </p>
 
